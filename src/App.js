@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useEffect, useState } from "react";
 import LinkForm from "./components/LinkForm";
 import LinkList from "./components/LinkList";
