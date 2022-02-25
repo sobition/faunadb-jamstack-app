@@ -5,7 +5,7 @@ module.exports = async (query, variables) => {
   const {
     data: { data, errors },
   } = await axios({
-    url: "https://graphql.us.fauna.com/graphql",
+    url: "https://graphql.fauna.com/graphql",
     method: "POST",
     headers: {
       Authorization: `Bearer ${process.env.FAUNA_SECRET_KEY}`,
