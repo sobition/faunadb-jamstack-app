@@ -17,7 +17,7 @@ const LinkCard = ({ link, refreshLinks }) => {
   const deleteLink = async () => {
     const id = link._id;
     try {
-      await fetch("api/deleteLink", {
+      await fetch("/.netlify/functions/deleteLink", {
         method: "DELETE",
         body: JSON.stringify({ id }),
       });
