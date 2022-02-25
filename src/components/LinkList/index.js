@@ -9,14 +9,14 @@ const LinkList = ({ links, refreshLinks }) => {
         links
           .filter((link) => !link.archived)
           .map((link) => (
-            <LinkCard ky={link._id} link={link} refreshLinks={refreshLinks} />
+            <LinkCard key={link._id} link={link} refreshLinks={refreshLinks} />
           ))}
       <h2 className="my-4">Archived Links</h2>
       {links &&
         links
           .filter((link) => link.archived)
           .map((link) => (
-            <LinkCard ky={link._id} link={link} refreshLinks={refreshLinks} />
+            <LinkCard key={link._id} link={link} refreshLinks={refreshLinks} />
           ))}
     </div>
   );
